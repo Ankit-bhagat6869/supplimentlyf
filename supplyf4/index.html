@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supplimentlyf</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Supplimentlyf</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Supplements</a>
+      <a href="#">Goals</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fuel Your Fitness, Naturally</h2>
+    <p>Explore the best supplements tailored to your goals</p>
+    <button id="startBtn">Get Started</button>
+  </section>
+
+  <section class="spotlight">
+    <h3>Popular Supplements</h3>
+    <div class="supplement-grid">
+
+      <div class="supplement-card">
+        <img src="creatine.png" alt="Creatine">
+        <div class="supplement-card-content">
+          <h4>Creatine Monohydrate</h4>
+          <p>Boosts energy, power, and muscle volume. Ideal for intense training.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="whey.png" alt="Whey Protein">
+        <div class="supplement-card-content">
+          <h4>Whey Protein</h4>
+          <p>High-quality protein for muscle repair and recovery.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="multivitamin.png" alt="Multivitamin">
+        <div class="supplement-card-content">
+          <h4>Multivitamin</h4>
+          <p>Fills nutritional gaps and supports overall wellness.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="BCAA.png" alt="BCAA">
+        <div class="supplement-card-content">
+          <h4>BCAA</h4>
+          <p>Reduces muscle soreness and preserves lean muscle mass.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="omega3.png" alt="Omega-3">
+        <div class="supplement-card-content">
+          <h4>Omega-3</h4>
+          <p>Supports heart, brain function, and reduces inflammation.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="l-cartine.png" alt="L-Carnitine">
+        <div class="supplement-card-content">
+          <h4>L-Carnitine</h4>
+          <p>Helps in fat metabolism and boosts endurance.</p>
+        </div>
+      </div>
+
+      <div class="supplement-card">
+        <img src="preworkout.png" alt="Preworkout">
+        <div class="supplement-card-content">
+          <h4>Preworkout</h4>
+          <p>Enhances focus, energy, and training intensity.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="goals" id="goals">
+    <h3>Choose Your Goal</h3>
+    <div class="goal-cards">
+      <div class="goal-card">
+        <img src="muscle.jpg" alt="Muscle Gain">
+        <p>Muscle Gain</p>
+      </div>
+      <div class="goal-card">
+        <img src="fatloss.jpg" alt="Fat Loss">
+        <p>Fat Loss</p>
+      </div>
+      <div class="goal-card">
+        <img src="wellness.jpg" alt="Wellness">
+        <p>Wellness</p>
+      </div>
+      <div class="goal-card">
+        <img src="performance.jpg" alt="Performance">
+        <p>Performance</p>
+      </div>
+    </div>
+    <a class="cta-link" href="#">See Personalized Recommendations</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Supplyf. Created by Ankit Bhagat.</p>
+  </footer>
+
+  <script>
+    document.getElementById('startBtn').addEventListener('click', function () {
+      document.getElementById('goals').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
