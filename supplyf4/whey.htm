@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protein Power - Fuel Your Gains</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2b5876, #4e4376);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/premium-photo/protein-powder-white-background-top-view_492434-175.jpg?w=2000') no-repeat center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      height: 80vh;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero button {
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: #ef476f;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #ffd166;
+      transform: scale(1.05);
+      color: black;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-of-type(odd) {
+      background: #fff3f3;
+    }
+
+    .section:nth-of-type(even) {
+      background: #eef7ff;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .scientific, .faq, .testimonials, .cta {
+      padding: 60px 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      color: #222;
+      text-align: center;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #222;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #f4f4f4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .product-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Protein Power</h1>
+    <p>Premium Protein Powders for Serious Athletes</p>
+  </header>
+
+  <section class="hero">
+    <h2>Build Lean Muscle & Fuel Recovery</h2>
+    <button onclick="scrollToProducts()">Shop Protein</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Top Protein Powders You Can Trust</h3>
+    <div class="product-links">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81k35F4SpBL._AC_SX679_.jpg" alt="Amazon Protein"/>
+        <p><a href="https://www.amazon.com/s?k=protein+powder" target="_blank">Buy on Amazon</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/13442763-2095213121100380.jpg&format=webp&auto=avif&crop=1100,1200,smart" alt="MyProtein Whey"/>
+        <p><a href="https://www.myprotein.com/sports-nutrition/impact-whey-protein/10530943.html" target="_blank">Buy on MyProtein</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw2190750c/hi-res/012346_GNC%20AMP%20Wheybolic%20Classic%20Vanilla_Tub.jpg?sw=1500&sh=1500&sm=fit" alt="GNC Whey"/>
+        <p><a href="https://www.gnc.com/protein/" target="_blank">Buy on GNC</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Use Protein Powder?</h3>
+    <ul class="benefits-list">
+      <li>💪 Speeds up muscle recovery after workouts</li>
+      <li>🍫 Convenient and tasty source of high-quality protein</li>
+      <li>⚡ Helps build and preserve lean muscle mass</li>
+      <li>🕒 Supports your metabolism and daily protein intake</li>
+      <li>🏋️ Perfect for athletes, gym-goers, and busy lifestyles</li>
+    </ul>
+  </section>
+
+  <section class="section scientific">
+    <h3>Scientifically Proven</h3>
+    <p>Whey and plant-based protein powders are clinically shown to support muscle protein synthesis and improve training outcomes when paired with resistance exercise.</p>
+    <p><a href="https://examine.com/supplements/whey-protein/" target="_blank">Learn more on Examine.com →</a></p>
+  </section>
+
+  <section class="section faq">
+    <h3>FAQs</h3>
+    <div class="faq-item">
+      <strong>Which protein is best?</strong>
+      <p>Whey isolate is fast-absorbing. Casein is slow-release. Plant proteins are ideal for vegans.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How much should I take?</strong>
+      <p>Usually 20–30g post workout. Depends on your diet and fitness goals.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Is it safe?</strong>
+      <p>Yes, it’s generally safe for long-term use unless you have allergies or kidney issues.</p>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>User Reviews</h3>
+    <p><strong>Gauransh Nayal</strong>: “The chocolate whey tastes amazing. I never skip a shake now!”</p>
+    <p><strong>Anshul Javiya</strong>: “Great results in just a few weeks. My muscles are more defined.”</p>
+    <p><strong>Ashutosh Maurya</strong>: “Affordable and effective. Definitely worth the investment.”</p>
+  </section>
+
+  <section class="cta">
+    <h3>Elevate Your Nutrition</h3>
+    <p>Ready to recover faster and gain lean mass? Make protein powder a part of your daily diet today.</p>
+    <button onclick="scrollToProducts()">Get Yours Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Protein Power. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
