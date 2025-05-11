@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creatine Power - Boost Your Performance</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+
+    .hero {
+      background: url('https://thumbs.dreamstime.com/z/word-creatine-written-white-scattered-powder-blue-background-concept-wellness-266864976.jpg') no-repeat center/cover;
+      color: rgb(6, 1, 1);
+      padding: 100px 20px;
+      text-align: center;
+      height: 80vh;
+      justify-content: flex;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero button {
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: #12a534;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #e84300;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-of-type(odd) {
+      background: #f0f8ff; /* soft blue */
+    }
+
+    .section:nth-of-type(even) {
+      background: #fff9ec; /* soft warm yellow */
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #222;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .scientific {
+      background: #e6f0ff !important; /* gentle blue */
+    }
+
+    .faq {
+      background: #eaffea !important; /* minty */
+    }
+
+    .testimonials {
+      background: #f0eaff !important; /* soft lavender */
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #56ab2f, #a8e063);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #222;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #f4f4f4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .product-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Creatine Power</h1>
+    <p>Fuel your workouts. Maximize your gains.</p>
+  </header>
+
+  <section class="hero">
+    <h2>Unlock Peak Performance with Premium Creatine</h2>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Buy Creatine from Trusted Stores</h3>
+    <div class="product-links">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71Y6dKQZksL._AC_SL1500_.jpg" alt="Amazon Creatine"/>
+        <p><a href="https://www.amazon.com/s?k=creatine+monohydrate" target="_blank">Buy on Amazon</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/15010401-1645217809708955.jpg&format=webp&auto=avif&crop=1100,1200,smart" alt="MyProtein Creatine"/>
+        <p><a href="https://www.myprotein.com/sports-nutrition/creatine-monohydrate/10530050.html" target="_blank">Buy on MyProtein</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw4b4bacc6/hi-res/759017_GNC_PRO_Performance_Creatine_Monohydrate_100svg_tub_Front.png?sw=1500&sh=1500&sm=fit" alt="GNC Creatine"/>
+        <p><a href="https://www.gnc.com/creatine/" target="_blank">Buy on GNC</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Creatine?</h3>
+    <ul class="benefits-list">
+      <li>⚡ Increases muscle strength and power output</li>
+      <li>🏋️‍♀️ Boosts high-intensity workout performance</li>
+      <li>🧠 Supports brain function and mental clarity</li>
+      <li>🕐 Helps with quicker muscle recovery</li>
+      <li>💪 Promotes lean muscle growth</li>
+      <li>💧 Aids cellular hydration for a fuller look</li>
+    </ul>
+  </section>
+
+  <section class="section scientific">
+    <h3>Backed by Science</h3>
+    <p>More than 700 studies confirm creatine’s role in increasing strength, muscle mass, and performance. It is one of the most researched and safest supplements available.</p>
+    <p><a href="https://examine.com/supplements/creatine/" target="_blank">Learn more from Examine.com →</a></p>
+  </section>
+
+  <section class="section faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item">
+      <strong>Is creatine safe?</strong>
+      <p>Yes, creatine is one of the most well-researched and safest supplements available today.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How do I take it?</strong>
+      <p>5g daily, mixed with water or juice. A loading phase is optional, not necessary.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can it be used long-term?</strong>
+      <p>Yes, long-term use has been shown to be safe in healthy individuals.</p>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>User Reviews</h3>
+    <p><strong>Naman Kannojiya</strong>: “This creatine gave me the energy I needed to power through intense workouts. Highly recommend!”</p>
+    <p><strong>Risabh Raj</strong>: “Noticeable strength and endurance improvement within two weeks. Worth every penny.”</p>
+    <p><strong>Satwik Gorle</strong>: “My lifts increased, and I feel more pumped at the gym. It’s a must-have for serious training.”</p>
+  </section>
+
+  <section class="cta">
+    <h3>Start Your Transformation Today</h3>
+    <p>Thousands of athletes and fitness enthusiasts trust creatine to improve their performance. Why not you?</p>
+    <button onclick="scrollToProducts()">Get Yours Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Creatine Power. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

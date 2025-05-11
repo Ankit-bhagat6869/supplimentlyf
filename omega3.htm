@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omega-3 - Heart & Brain Health</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2b5876, #4e4376);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/premium-photo/omega-3-background_78899-9795.jpg') no-repeat center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      height: 80vh;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero button {
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: #ef476f;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #ffd166;
+      transform: scale(1.05);
+      color: black;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-of-type(odd) {
+      background: #fff3f3;
+    }
+
+    .section:nth-of-type(even) {
+      background: #eef7ff;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .scientific, .faq, .testimonials, .cta {
+      padding: 60px 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      color: #222;
+      text-align: center;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #222;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #f4f4f4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .product-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Omega-3</h1>
+    <p>Boost Heart Health & Mental Clarity with Omega-3</p>
+  </header>
+
+  <section class="hero">
+    <h2>Essential Fatty Acids for Your Health</h2>
+    <button onclick="scrollToProducts()">Shop Omega-3</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Top Omega-3 Supplements You Can Trust</h3>
+    <div class="product-links">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/31igyAhY2UL._UL480_FMwebp_QL65_.jpg" alt="Krill Omega-3"/>
+        <p><a href="https://www.amazon.com/s?k=omega+3+fish+oil" target="_blank">Buy on Amazon</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/10529442-1544860398566920.jpg&format=webp&auto=avif&width=450&height=450&fit=crop" alt="Fish Oil Omega-3"/>
+        <p><a href="https://www.myprotein.com/c/ranges/myvitamins/omega-3/" target="_blank">Buy on MyProtein</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwd526a707/hi-res/735224_GNC_Triple_Strength_Fish_Oil_Mini_Bottle_Front.jpg?sw=1500&sh=1500&sm=fit" alt="Omega-3 Oil"/>
+        <p><a href="https://www.gnc.com/vitamins-supplements/fish-oil-omegas/" target="_blank">Buy on GNC</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Choose Omega-3?</h3>
+    <ul class="benefits-list">
+      <li>💪 Supports heart health and circulation</li>
+      <li>🧠 Enhances brain function and memory</li>
+      <li>⚖️ Promotes joint health and flexibility</li>
+      <li>🛌 Improves sleep quality and mood</li>
+      <li>🌟 Aids in reducing inflammation</li>
+    </ul>
+  </section>
+
+  <section class="section scientific">
+    <h3>Scientifically Backed Benefits</h3>
+    <p>Omega-3 fatty acids are essential for maintaining overall health, helping to lower the risk of chronic diseases and improving your mental and physical well-being.</p>
+    <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5697013/" target="_blank">Learn more on PubMed →</a></p>
+  </section>
+
+  <section class="section faq">
+    <h3>FAQs</h3>
+    <div class="faq-item">
+      <strong>What are the benefits of Omega-3?</strong>
+      <p>It supports heart health, cognitive function, and reduces inflammation.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How much should I take?</strong>
+      <p>Typically 1000-3000mg per day depending on your health needs.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Is Omega-3 safe?</strong>
+      <p>Yes, it’s safe for most people unless you have specific health conditions like fish allergies.</p>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>User Reviews</h3>
+    <p><strong>Ankit Bhagat</strong>: “I feel so much more energized and focused at work.”</p>
+    <p><strong>Aditya Sarigrii</strong>: “Helps reduce joint pain, especially after my workouts!”</p>
+    <p><strong>Abhisekh Sharma</strong>: “I love how my skin looks! Omega-3 really works wonders.”</p>
+  </section>
+
+  <section class="cta">
+    <h3>Boost Your Health with Omega-3</h3>
+    <p>Don’t miss out on this essential nutrient! Start reaping the benefits of Omega-3 today.</p>
+    <button onclick="scrollToProducts()">Get Yours Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Omega-3. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

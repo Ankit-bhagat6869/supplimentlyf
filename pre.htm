@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pre-Workout - Fuel Your Workout</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6f00, #ff9800);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+
+    .hero {
+      background: url('https://fitnessclone.com/wp-content/uploads/2022/04/Pre-Workout-For-Exercise-Goals.jpg') no-repeat center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      height: 80vh;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero button {
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: #9c27b0;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #e91e63;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-of-type(odd) {
+      background: #ffe0b2;
+    }
+
+    .section:nth-of-type(even) {
+      background: #e8f5e9;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .scientific, .faq, .testimonials, .cta {
+      padding: 60px 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #ff5722, #ff9800);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #222;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #f4f4f4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .product-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pre-Workout</h1>
+    <p>Fuel Your Body for Maximum Performance</p>
+  </header>
+
+  <section class="hero">
+    <h2>Maximize Energy, Endurance & Focus</h2>
+    <button onclick="scrollToProducts()">Shop Pre-Workouts</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Top Pre-Workout Supplements</h3>
+    <div class="product-links">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/7159zVK+GTL._AC_UL480_FMwebp_QL65_.jpg" alt="Pre-Workout Supplement"/>
+        <p><a href="https://www.amazon.com/s?k=pre+workout" target="_blank">Buy on Amazon</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/11542703-1945216803133046.jpg&format=webp&auto=avif&width=450&height=450&fit=crop" alt="MyProtein Pre-Workout"/>
+        <p><a href="https://www.myprotein.com/c/nutrition/pre-post-workout/pre-workout/" target="_blank">Buy on MyProtein</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dweb24bbc7/hi-res/369926_Beyond_Raw_LIT_PWO_Gummy_Worm_30svgs_tub_Front.jpg?sw=305&sh=305&sm=fit" alt="GNC Pre-Workout"/>
+        <p><a href="https://www.gnc.com/search?q=pre+workout&lang=default" target="_blank">Buy on GNC</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Pre-Workout?</h3>
+    <ul class="benefits-list">
+      <li>⚡ Increases energy levels for intense workouts</li>
+      <li>💪 Enhances strength and power output</li>
+      <li>🏃‍♀️ Improves endurance and stamina</li>
+      <li>🧠 Boosts focus and mental clarity during workouts</li>
+      <li>🔥 Promotes fat burning and metabolism</li>
+    </ul>
+  </section>
+
+  <section class="section scientific">
+    <h3>Backed by Science</h3>
+    <p>Pre-workout supplements, containing ingredients like caffeine and creatine, have been shown to improve performance and boost workout intensity. Studies support their use for increasing strength, energy, and focus.</p>
+    <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5485202/" target="_blank">Learn more on PubMed →</a></p>
+  </section>
+
+  <section class="section faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item">
+      <strong>How does pre-workout help?</strong>
+      <p>Pre-workout helps by boosting energy, enhancing focus, and improving endurance during your workout sessions.</p>
+    </div>
+    <div class="faq-item">
+      <strong>When should I take pre-workout?</strong>
+      <p>Take it about 20-30 minutes before your workout for optimal results.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Is pre-workout safe to use every day?</strong>
+      <p>Yes, as long as you follow the recommended dosage, it is safe to use daily. Always check with your doctor if you have any health concerns.</p>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>User Reviews</h3>
+    <p><strong>Tushar Singh</strong>: “The energy and focus I get from this pre-workout is unmatched. It's been a game-changer for my workouts.”</p>
+    <p><strong>Gautam Mishra</strong>: “I feel more energized and can push through my workouts harder than ever. Highly recommend!”</p>
+    <p><strong>Sumit Sandilya</strong>: “My endurance has increased significantly. Great product!”</p>
+  </section>
+
+  <section class="cta">
+    <h3>Unleash Your Full Potential</h3>
+    <p>Get the most out of your workouts with the right pre-workout supplement. Don't settle for less!</p>
+    <button onclick="scrollToProducts()">Get Yours Now</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Pre-Workout. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

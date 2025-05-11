@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Essentials - Multivitamin Support</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #283e51, #485563);
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/premium-photo/protein-powder-white-background-top-view_492434-175.jpg?w=2000') no-repeat center/cover;
+      color: rgb(6, 5, 11);
+      padding: 100px 20px;
+      text-align: center;
+      height: 40vh;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #fff;
+    }
+
+    .hero button {
+      padding: 14px 30px;
+      font-size: 1.1em;
+      background: #28a745;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #ff6600;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-of-type(odd) {
+      background: #eefdfb;
+    }
+
+    .section:nth-of-type(even) {
+      background: #fffce6;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .scientific {
+      background: #e1f4ff !important;
+    }
+
+    .faq {
+      background: #f0fff0 !important;
+    }
+
+    .testimonials {
+      background: #f9e6ff !important;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      color: #222;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta button {
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .product-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daily Essentials</h1>
+    <p>Complete Multivitamin Support for a Healthier You</p>
+  </header>
+
+  <section class="hero">
+    <h2>Fill the Gaps. Fuel Your Life.</h2>
+    <button onclick="scrollToProducts()">Buy Now</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Top Multivitamin Brands</h3>
+    <div class="product-links">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51UGq3Yz-1L._AC_SY879_.jpg" alt="Amazon Multivitamin"/>
+        <p><a href="https://www.amazon.com/s?k=multivitamin" target="_blank">Buy on Amazon</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/10530421-3104926487711944.jpg&format=webp&auto=avif&crop=1100,1200,smart" alt="MyProtein Multivitamin"/>
+        <p><a href="https://www.myprotein.com/sports-nutrition/daily-vitamins/10530421.html" target="_blank">Buy on MyProtein</a></p>
+      </div>
+      <div class="product-card">
+        <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex23141/v/83.jpg" alt="iHerb Multivitamin"/>
+        <p><a href="https://www.iherb.com/c/Multivitamins" target="_blank">Buy on iHerb</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Take Multivitamins?</h3>
+    <ul class="benefits-list">
+      <li>✅ Supports immune system and metabolism</li>
+      <li>💡 Enhances energy levels and focus</li>
+      <li>🧠 Promotes brain and heart health</li>
+      <li>🌿 Covers nutritional gaps from diet</li>
+      <li>💪 Supports bone and muscle health</li>
+      <li>👀 Benefits vision, skin, and hair</li>
+    </ul>
+  </section>
+
+  <section class="section scientific">
+    <h3>Scientific Backing</h3>
+    <p>Multivitamins are supported by research to fill essential nutrient gaps and promote long-term health and vitality.</p>
+    <p><a href="https://examine.com/supplements/multivitamin/" target="_blank">Read more at Examine.com →</a></p>
+  </section>
+
+  <section class="section faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item">
+      <strong>Are multivitamins safe?</strong>
+      <p>Yes, they are generally safe when taken as recommended for your age and gender.</p>
+    </div>
+    <div class="faq-item">
+      <strong>When should I take them?</strong>
+      <p>Usually in the morning with food for better absorption.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can I take them daily?</strong>
+      <p>Yes. Daily multivitamin use is common and beneficial for overall wellness.</p>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>Real User Feedback</h3>
+    <p><strong>Ujjwal Sharma</strong>: “I feel more energetic throughout the day. Skin looks clearer too!”</p>
+    <p><strong>Aman Raj</strong>: “My immunity and focus have improved ever since I started taking these.”</p>
+    <p><strong>Anish Singh</strong>: “An easy way to cover all essential nutrients in a busy lifestyle.”</p>
+  </section>
+
+  <section class="cta">
+    <h3>Start Your Wellness Journey Today</h3>
+    <p>Give your body what it needs — complete nutrition in one daily dose.</p>
+    <button onclick="scrollToProducts()">Shop Multivitamins</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Daily Essentials. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
