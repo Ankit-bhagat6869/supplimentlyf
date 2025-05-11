@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wellness Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #eef2f3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #16a085;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #1abc9c;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    .supplement-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .supplement {
+      background-color: #f5fafa;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .supplement h3 {
+      margin-bottom: 8px;
+      color: #27ae60;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #16a085;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wellness Guide</h1>
+    <nav>
+      <a href="#science">Science</a>
+      <a href="#supplements">Supplements</a>
+    </nav>
+  </header>
+
+  <section id="science">
+    <h2>The Science of Wellness</h2>
+    <p>
+      Wellness is a holistic approach to health that involves physical, mental, and emotional well-being.
+      The core principles of wellness include:
+    </p>
+    <ul>
+      <li><strong>Balanced Nutrition:</strong> Eating a variety of nutrient-rich foods to support health and energy.</li>
+      <li><strong>Physical Activity:</strong> Regular movement improves heart health, mobility, and mood.</li>
+      <li><strong>Mental Health:</strong> Stress management, mindfulness, and emotional support are vital.</li>
+      <li><strong>Sleep & Recovery:</strong> Adequate rest allows the body and mind to reset and heal.</li>
+      <li><strong>Hydration:</strong> Proper water intake is essential for every body system.</li>
+    </ul>
+  </section>
+
+  <section id="supplements">
+    <h2>Supplements for Wellness</h2>
+    <div class="supplement-list">
+      <div class="supplement"><a href="multivitamin.htm">
+        <h3>Multivitamins</h3></a>
+        <p>Fill potential nutrient gaps and support overall bodily functions.</p>
+      </div>
+      <div class="supplement"><a href="omega3.htm">
+        <h3>Omega-3 Fatty Acids</h3></a>
+        <p>Promotes heart, brain, and joint health with anti-inflammatory benefits.</p>
+      </div>
+      <div class="supplement"><a href="whey.htm">
+        <h3>Whey Protein</h3></a>
+        <p>Supports muscle recovery, boosts metabolism, and aids in protein synthesis.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;  All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
